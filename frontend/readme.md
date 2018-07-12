@@ -1,5 +1,8 @@
-`A Vue.js project`
+# Introduction
 
+A Vue.js project
+
+# Build Setup
 
 ```
 # install dependencies
