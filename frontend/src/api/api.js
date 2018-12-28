@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-let base = 'http://127.0.0.1:8000';
+let base = 'http://localhost:8001';
 
 export const requestLogin = params => { return axios.post(`${base}/api-token-auth/`, params).then(res => res.data); };
 

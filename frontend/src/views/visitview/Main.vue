@@ -2,21 +2,21 @@
 <div>
    <el-col :span="24" class="mainSQ">
        <el-col :span="12" class="mainInput">
-            <el-row style="height: 50px;">
+            <el-row style="height: 50px;" scoped>
                 <el-input placeholder="请输入内容" v-model="searchQuery">
                 <el-button slot="append" icon="el-icon-search"></el-button>
                 </el-input>
             </el-row>
        </el-col>
        <el-col :span="12" class="">
-           <el-row style="height: 50px;">
+           <el-row style="height: 50px;" scoped>
             <el-input placeholder="请输入内容" v-model="resultQuery">
             <el-button slot="append" icon="el-icon-search"></el-button>
             </el-input>
         </el-row>
        </el-col>
 
-        <div style="text-align:left" >
+        <div style="text-align:left" scoped>
         <el-col :span="24" class="ItemCh" >
             <el-table :data="griditems" highlight-current-row>
                 <el-col :span="12">
@@ -81,7 +81,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .mainSQ{
     flex:1;
     padding: 20px;

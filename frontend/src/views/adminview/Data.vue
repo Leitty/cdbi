@@ -1,7 +1,7 @@
 <template>
-    <div style="padding: 20px;flex:1;">
-        <el-card class="box-card-fenci">
-            <div style="font-family: Helvetica Neue;text-align: left;font-size: 18px;">
+    <div style="padding: 20px;flex:1;" scoped>
+        <el-card class="box-card-fenci" scoped>
+            <div style="font-family: Helvetica Neue;text-align: left;font-size: 18px;" scoped>
                 <p>分词对照表：</p>
                 <el-upload
                     class="upload-demo"
@@ -20,8 +20,8 @@
             </div>
         </el-card>
         <p></p>
-        <el-card class="box-card-eng">
-            <div style="font-family: Helvetica Neue;text-align: left;font-size: 18px;padding: 20px;flex:1;">
+        <el-card class="box-card-eng scoped">
+            <div style="font-family: Helvetica Neue;text-align: left;font-size: 18px;padding: 20px;flex:1;" scoped>
                 <p>英汉对照表：</p>
                 <el-upload
                     class="upload-demo"
@@ -35,8 +35,8 @@
                     :file-list="fileList"
                     :auto-upload="false">
                     <el-button slot="trigger" size="big" type="primary">选取文件</el-button>
-                    <el-button style="margin-left: 10px;" size="big" type="success" @click="submitUploadDict">上传到服务器</el-button>
-                    <el-button style="margin-left: 15px;" size="big" type="warning" @click="submitDumpInDict">导入数据</el-button>
+                    <el-button style="margin-left: 10px; scoped" size="big" type="success" @click="submitUploadDict">上传到服务器</el-button>
+                    <el-button style="margin-left: 15px; scoped" size="big" type="warning" @click="submitDumpInDict">导入数据</el-button>
                 </el-upload>
             </div>
         </el-card>        

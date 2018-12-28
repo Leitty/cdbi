@@ -5,7 +5,7 @@ import store from '@/store'
 // Vue.use(vuex);
 
 // Vue.prototype.$axios = axios
-axios.defaults.baseURL = 'http://127.0.0.1:8000/'
+axios.defaults.baseURL = 'http://127.0.0.1:8001/'
 axios.defaults.timeout = 5000
 
 
